@@ -124,6 +124,32 @@ public class Elagazas {
        else{
            System.out.println("Elégtelen");
        }
+       
+       // Ternáris operátor
+       // (feltétel) ? igaz : hamis
+       // true = Páros | false = Páratlan
+       String eredmeny = (szazalek % 2 == 0) ? "Páros" : "Páratlan";
+       System.out.println(eredmeny);
+       
+       // Esetszétválasztás - Switch-case
+       String honap = "Február";
+       // switch(egyenlőség) ÉRTÉK alapján vizsgál
+       switch(honap){
+           case "Január":
+               System.out.println("01");
+               break;
+            //else if( honap == "Február")
+           case "Február":
+                System.out.println("02");
+               break;
+            //else if( honap == "Március")
+           case "Március":
+                System.out.println("03");
+               break;
+            //else ág
+           default:
+               System.out.println("Nin cs ilyen hónap.");
+       }
     }
     
 }
