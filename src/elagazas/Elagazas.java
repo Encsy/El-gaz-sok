@@ -62,7 +62,68 @@ public class Elagazas {
            System.out.printf("A %d nagyobb, mint %d", a, b);
        }
        
+       // Logikai műveletek
+       /*
+       !: tagadás, nem
+       &&: Logikai ÉS
+       ||: Logikai VAGY
+       */
        
+       // (2 > 3) && (3 > 2) => HAMIS
+       // (3 > 2) || (2 > 3) => IGAZ
+       
+       int egesz = 30;
+       if (egesz % 10 == 0 && egesz % 3 == 0){
+           System.out.println("A 30 osztható 10-zel és 3-mal maradék nélkül");
+       }
+       else{
+           System.out.println("A 30 nem osztható maradék nélkül 10-zel és 3-mal");
+       }
+       
+       egesz = 27;
+       if(egesz % 10 == 0 || egesz % 3 == 0){
+           System.out.println("A 27 osztható 10-zel vagy 3-mal maradék nélkül.");
+       }
+       else{
+           System.out.println("A 27 nem osztható maradék nélkül 10-zel és 3-mal sem.");
+       }
+       
+       /*
+       if(){
+       
+       }
+       else{
+            if()
+            {
+       
+            }
+       }
+    }
+       */
+       
+       // Célszerű -if -else if - else
+       double szazalek = 60.0;
+       // 0-39 elégtelen
+       // 40-49 elégséges
+       // 50-59 közepes
+       // 60-79 jó
+       // 80-100 jeles
+       
+       if(szazalek >= 80){
+           System.out.println("Jeles");
+       }
+       else if(szazalek >= 60 && szazalek < 80){
+           System.out.println("Jó");
+       }
+       else if(szazalek >=50 && szazalek <60){
+           System.out.println("Közepes");
+       }
+       else if(szazalek >=40 && szazalek <50){
+           System.out.println("Elégséges");
+       }
+       else{
+           System.out.println("Elégtelen");
+       }
     }
     
 }
